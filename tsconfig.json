@@ -22,7 +22,39 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@class": [
+        "src/app/core/classes"
+      ],
+      "@models": [
+        "src/app/core/models"
+      ],
+      "@services": [
+        "src/app/core/services"
+      ],
+      "@utils": [
+        "src/app/core/utils"
+      ],
+      "@validators": [
+        "src/app/core/validators"
+      ],
+      "@core/*": [
+        "src/app/core/*"
+      ],
+      "@directives/*": [
+        "src/app/shared/directives/*"
+      ],
+      "@pipes/*": [
+        "src/app/shared/pipes/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@environment": [
+        "src/environments/environment"
+      ]
+    },
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
