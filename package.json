@@ -1,5 +1,5 @@
 {
-  "name": "update-template",
+  "name": "template-angular-16",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "lint:fix": "npm run lint -- --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "private": true,
   "dependencies": {
@@ -34,9 +35,13 @@
     "@angular-eslint/template-parser": "16.3.1",
     "@angular/cli": "^16.2.11",
     "@angular/compiler-cli": "^16.2.0",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -51,5 +56,10 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "prettier": "^3.2.4",
     "typescript": "~5.1.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
